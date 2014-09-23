@@ -34,6 +34,9 @@ Template.item.events =
 
 Template.item.completed_class = ->
   if this.completed then "completed" else ""
+         
+Template.item.admin_logged_in = ->
+  Session.get("admin_logged_in")
 
 Template.add.events = 
   'submit #new_todo': (e) ->

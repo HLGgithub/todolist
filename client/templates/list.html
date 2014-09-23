@@ -26,8 +26,10 @@
       <i class="icon-chevron-left icon-white"></i>
     </a>
     <span class="item-name" style="width:75%; white-space:normal; vertical-align:middle">{{name}}</span>
+     {{#if admin_logged_in}}
     <a href="#" class="btn btn-danger remove">
       <i class="icon-remove icon-white"></i>
     </a>
+     {{/if}}
   </li>
 </template>
